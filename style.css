@@ -1,0 +1,350 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+.sidebar{
+    background-color: black;
+    width: 340px;
+    border-radius: 1rem ;
+    margin-right: 0.5rem;
+}
+.main-content{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem ;
+    overflow: auto;
+    padding: 0 1rem 0 1rem;
+}
+.music-player{
+    background-color: #000;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 72px;
+}
+.nav{
+    background-color: #121212;
+    border-radius: 10px;
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+}
+.nav-opt{
+    line-height: 2.5rem;
+    padding: 0.5rem 0.75rem;
+}
+.nav .nav-opt:nth-of-type(2){
+    opacity: 0.65;
+}
+.nav .nav-opt:hover,.lib-opt:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.nav-opt i{
+    font-size: 1.25rem;
+    margin-right: 1rem;
+}
+.library{
+    background-color: #121212;
+    border-radius: 10px;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+.optLib{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.optLib img{
+    width: 1.25rem;
+    height: 1.25rem;
+}
+.lib-opt{
+    line-height: 2.5rem;
+    opacity: 0.65;
+}
+.lib-opt img{
+    margin-right: 1rem;
+}
+.icons{
+    font-size: 1.25rem;
+    margin-right: 1rem;
+}
+.library .icons i{
+    opacity: 0.65;
+    margin-left: 1rem;
+}
+.icons i:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+.box{
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 0.75rem ;
+    padding: 0.25rem 1rem;
+    margin: 0.5rem;
+    margin-top: 1rem;
+}
+.box-para1{
+    font-size: 0.9rem;
+    font-weight: 900;
+}
+.box-para2{
+    font-size: 0.85rem;
+    opacity: 0.99;
+}
+.badge{
+    background-color: #fff;
+    border-radius: 100px;
+    height: 2rem;
+    width: fit-content;
+    border: none;
+    font-size: 0.85rem;
+    padding: 0.25rem 1rem;
+    font-weight: 750;
+    margin-top: 0.5rem;
+}
+.badge:hover{
+    background-color: rgba(255,255,255,0.95);
+    font-size: 0.88rem;
+    cursor: pointer;
+}
+.box2{
+    padding-bottom: 1.2rem;;
+}
+.sticky-nav{
+    position: sticky;
+    top: 0px;   
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem ;
+    z-index: 2;
+}
+.nav-icons{
+    margin-left: 0.5rem;
+}
+.nav-badges{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-badges .badge{
+    margin-right: 1rem;
+}
+.nav-badges > i{
+    margin-right: 1rem;
+}
+.badge-black{
+    background-color: #000;
+    color: #fff;
+}
+.nav-badges .badge-black{
+    background-color: #000;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #232323;
+    border-radius: 0.5rem;
+    width: 12.5rem;
+    margin-right: 1.5rem;
+    margin-top:1rem;
+    padding: 1rem;
+}
+.card-img{
+    width: 100%;
+    border-radius: 0.2rem;
+}
+.card-title{
+    font-size: 1rem;
+    font-weight: 900;
+}
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.6;
+}
+.footer{
+    height: 300px;
+    opacity: 0.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .line{
+    width: 90%;
+    height: 50%;
+    border-top:1px solid #fff;
+}
+.player{
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+}
+.player-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player .player-controls img{
+    width: 0.8rem;
+    height: 0.9rem;
+    margin-left: 2rem;
+}
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.player-controls img{
+    opacity: 0.7;
+}
+.curr-time ,.total-time{
+    font-size: 0.7rem;
+    color: #A7A7A7;
+}
+.music-player{
+    display: flex;
+}
+.album{
+    width: 25%;
+}
+.player{
+    width: 50%;
+}
+.control{
+    width: 20%;
+}
+.player .player-controls [class="toggle-icon"]{
+    width: 2rem;
+    height: 2rem;
+    opacity: 1;
+}
+.player-controls img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+
+
+}
+.album{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    height: 3rem;
+}
+.album-info{
+    width: 100px;
+    height: 15px;
+    margin-bottom: 1rem;
+}
+.album .album-img img{
+    border-radius: 4px;
+    width: 3rem;
+    height: 2.8rem;
+}
+.album-info1{
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+.album-info2{
+    font-size: 0.6rem;
+}
+.album-img{
+    margin-top: 0.2rem;
+    margin-left:1rem ;
+    margin-right: 1rem;
+}
+.album-icon1 img{
+    height: 1.4rem;
+    width: 1.3rem;
+    margin-bottom: 6px;
+    margin-right: 0.5rem;
+    margin-left:1rem;
+}
+.album-icon2 img{
+    height: 2rem;
+    width: 1.5rem;
+    margin-left: 1rem;
+}
+.control{
+    margin-top: 1rem;
+}
+.control-icons{
+    display: flex;
+    height: 2rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.control-icons img{
+    width:1rem ;
+    height: 1rem;
+    margin-left: 10px;
+}
+.control-icons .foot-icon-dim{
+    height: 2rem;
+    width: 2rem;
+}
+.opacity{
+    opacity: 0.9;
+}
+.control-icons input[type="range"]{
+    appearance: none;
+    width: 5rem;
+    height: 0.2rem;
+    border-radius: 13px;
+}
+.control-icons input[type="range"]::-webkit-slider-thumb{
+    appearance: none;
+}
+.opacity:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.cursor{
+    cursor: pointer;
+}
+
+@media (max-width:1024px) {
+    .hide{
+        display: none;
+    }
+}
